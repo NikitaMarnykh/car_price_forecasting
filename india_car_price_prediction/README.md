@@ -8,6 +8,8 @@
 
 <h2> Установка зависимостей </h2>
 
+python -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 
 <h2> Запуск инфраструктуры </h2>
