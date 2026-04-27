@@ -1,0 +1,7 @@
+{
+  "name": "car-price-model",
+  "implementation": "mlserver_mlflow.MLflowRuntime",
+  "parameters": {
+    "uri": "models:/car_price_model_catboost/latest"
+  }
+}
