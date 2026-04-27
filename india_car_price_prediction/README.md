@@ -20,10 +20,10 @@ python -m machine_learning.train_car_price_model
 
 <h2> Проверка API </h2>
 
-# Health check
+Health check:
 curl http://localhost:8000/health
 
-# Тестовое предсказание
+Тестовое предсказание:
 curl -X POST http://localhost:8000/predict \
   -H "Content-Type: application/json" \
   -d '{
@@ -50,8 +50,8 @@ curl -X POST http://localhost:8000/predict \
 
   <h2> Seldon MLServer </h2>
 
-  # Запуск Seldon
+Запуск Seldon:
 docker-compose --profile seldon up -d
 
-# Проверка
+Проверка:
 curl http://localhost:9002/v2/models/car-price-model/ready
